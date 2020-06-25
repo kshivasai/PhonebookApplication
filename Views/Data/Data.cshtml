@@ -1,0 +1,35 @@
+﻿@model PhonebookApplication.Models.Newdata
+@{
+    ViewBag.Title = "Data of the user";
+}
+
+<h2>Enter Details</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        Name : @Html.TextBoxFor(user => user.Name)
+    </div>
+    <div>
+        Address_Line_1 : @Html.TextBoxFor(user => user.Address_line_1)
+    </div>
+    <div>
+        Address_Line_2 : @Html.TextBoxFor(user => user.Address_line_2)
+    </div>
+    <div>
+        City : @Html.TextBoxFor(user => user.City)
+    </div>
+    <div>
+        Pincode : @Html.TextBoxFor(user => user.Pincode)
+    </div>
+    <div>
+        Phone_number : @Html.TextBoxFor(user => user.Phonenumber)
+    </div>
+    <div>
+        <input type = "button" value = "submit" onclick="@("window.location.href = '" +Url.Action("Phonesave","Data") + "'" )"/>
+
+        <input type = "button" value="cancle" name = "Cancle" onclick="@("window.location.href = '" +Url.Action("Dashboard","Data") + "'" )" />
+    </div>
+
+}
+

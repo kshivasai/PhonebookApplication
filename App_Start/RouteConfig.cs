@@ -13,11 +13,11 @@ namespace PhonebookApplication
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
-                name: "Data",
-                url: "Data/Data",
-                defaults: new { controller = "Data", action = "Data", id = UrlParameter.Optional }
-            );
+            //routes.MapRoute(
+            //    name: "Data",
+            //    url: "Data/Data",
+            //    defaults: new { controller = "Data", action = "Data", id = UrlParameter.Optional }
+            //);
 
             routes.MapRoute(
                 name: "Default",

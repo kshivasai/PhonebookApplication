@@ -167,6 +167,7 @@
     <Content Include="Views\Data\Data.cshtml" />
     <Content Include="Views\Data\Dashboard.cshtml" />
     <Content Include="Views\Data\Phonesave.cshtml" />
+    <Content Include="Views\Data\User.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

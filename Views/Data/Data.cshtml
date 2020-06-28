@@ -26,10 +26,22 @@
         Phone_number : @Html.TextBoxFor(user => user.Phonenumber)
     </div>
     <div>
-        <input type = "button" value = "submit" onclick="@("window.location.href = '" +Url.Action("Phonesave","Data") + "'" )"/>
+        <input type="button" value="submit" onclick="@("window.location.href = '" +Url.Action("Phonesave","Data") + "'" )" />
 
-        <input type = "button" value="cancle" name = "Cancle" onclick="@("window.location.href = '" +Url.Action("Dashboard","Data") + "'" )" />
+        <input type="button" value="cancle" name="Cancle" onclick="@("window.location.href = '" +Url.Action("Dashboard","Data") + "'" )" />
     </div>
-
 }
 
+@* Ways to redirect the*@
+
+@* onclick=" @("window.location.href = '" +Url.Action("Action","Controller") + "'" ) " *@
+
+@* onclik="redirectOnClick()"
+
+    <script>
+        function redirectOnClick() {
+            document.location = 'Controller Name/Action Name';
+        }
+    </script>
+
+*@
